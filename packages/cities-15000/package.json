@@ -1,0 +1,32 @@
+{
+  "name": "cities-15000-structured",
+  "description": "A low-memory, structured loader for the GeoNames.org cities-15000 dataset.",
+  "author": "Adam Averay (https://adamaveray.com.au/)",
+  "version": "1.0.0",
+  "license": "MIT",
+  "homepage": "https://github.com/adamaveray/geonames",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamaveray/geonames.git",
+    "directory": "packages/cities-15000"
+  },
+  "type": "module",
+  "source": "./index.ts",
+  "exports": "./dist/index.modern.mjs",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "unpkg": "./dist/index.umd.js",
+  "typings": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "npm run build:bundle && npm run build:load && wait",
+    "build:bundle": "microbundle --target=node --tsconfig=tsconfig.build.json",
+    "build:load": "yes | cp -f ../../sources/cities15000.txt ./dist/cities15000.txt",
+    "prepack": "npm run build"
+  }
+}

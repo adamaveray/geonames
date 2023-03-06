@@ -1,0 +1,2 @@
+sources/*.txt eol=lf
+test/__resources__/*.tsv eol=lf

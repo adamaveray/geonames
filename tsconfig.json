@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.common.json",
+  "compilerOptions": {
+    "baseUrl": "."
+  },
+  "include": ["./*.ts", "./lib/**/*", "./test/**/*", "./packages/*/index.ts"]
+}

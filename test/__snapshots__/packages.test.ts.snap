@@ -1,0 +1,122 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`packages provides correct output: cities-500 1`] = `
+{
+  "admin1Code": "02",
+  "admin2Code": undefined,
+  "admin3Code": undefined,
+  "admin4Code": undefined,
+  "alternateNames": [],
+  "asciiName": "Soldeu",
+  "cc2": undefined,
+  "countryCode": "AD",
+  "dem": 1832,
+  "elevation": undefined,
+  "featureClass": "P",
+  "featureCode": "PPL",
+  "geonameId": 3038999,
+  "latitude": 42.57688,
+  "longitude": 1.66769,
+  "modificationDate": 2017-11-06T00:00:00.000Z,
+  "name": "Soldeu",
+  "population": 602,
+  "timezone": "Europe/Andorra",
+}
+`;
+
+exports[`packages provides correct output: cities-1000 1`] = `
+{
+  "admin1Code": "02",
+  "admin2Code": undefined,
+  "admin3Code": undefined,
+  "admin4Code": undefined,
+  "alternateNames": [
+    "Ehl Tarter",
+    "Эл Тартер",
+  ],
+  "asciiName": "El Tarter",
+  "cc2": undefined,
+  "countryCode": "AD",
+  "dem": 1721,
+  "elevation": undefined,
+  "featureClass": "P",
+  "featureCode": "PPL",
+  "geonameId": 3039154,
+  "latitude": 42.57952,
+  "longitude": 1.65362,
+  "modificationDate": 2012-11-03T00:00:00.000Z,
+  "name": "El Tarter",
+  "population": 1052,
+  "timezone": "Europe/Andorra",
+}
+`;
+
+exports[`packages provides correct output: cities-5000 1`] = `
+{
+  "admin1Code": "06",
+  "admin2Code": undefined,
+  "admin3Code": undefined,
+  "admin4Code": undefined,
+  "alternateNames": [
+    "San Julia",
+    "San Julià",
+    "Sant Julia de Loria",
+    "Sant Julià de Lòria",
+    "Sant-Zhulija-de-Lorija",
+    "sheng hu li ya-de luo li ya",
+    "Сант-Жулия-де-Лория",
+    "サン・ジュリア・デ・ロリア教区",
+    "圣胡利娅-德洛里亚",
+    "圣胡利娅－德洛里亚",
+  ],
+  "asciiName": "Sant Julia de Loria",
+  "cc2": undefined,
+  "countryCode": "AD",
+  "dem": 921,
+  "elevation": undefined,
+  "featureClass": "P",
+  "featureCode": "PPLA",
+  "geonameId": 3039163,
+  "latitude": 42.46372,
+  "longitude": 1.49129,
+  "modificationDate": 2013-11-23T00:00:00.000Z,
+  "name": "Sant Julià de Lòria",
+  "population": 8022,
+  "timezone": "Europe/Andorra",
+}
+`;
+
+exports[`packages provides correct output: cities-15000 1`] = `
+{
+  "admin1Code": "08",
+  "admin2Code": undefined,
+  "admin3Code": undefined,
+  "admin4Code": undefined,
+  "alternateNames": [
+    "Ehskal'des-Ehndzhordani",
+    "Escaldes",
+    "Escaldes-Engordany",
+    "Les Escaldes",
+    "esukarudesu=engorudani jiao qu",
+    "lai sai si ka er de-en ge er da",
+    "Эскальдес-Энджордани",
+    "エスカルデス＝エンゴルダニ教区",
+    "萊塞斯卡爾德-恩戈爾達",
+    "萊塞斯卡爾德－恩戈爾達",
+  ],
+  "asciiName": "les Escaldes",
+  "cc2": undefined,
+  "countryCode": "AD",
+  "dem": 1033,
+  "elevation": undefined,
+  "featureClass": "P",
+  "featureCode": "PPLA",
+  "geonameId": 3040051,
+  "latitude": 42.50729,
+  "longitude": 1.53414,
+  "modificationDate": 2008-10-15T00:00:00.000Z,
+  "name": "les Escaldes",
+  "population": 15853,
+  "timezone": "Europe/Andorra",
+}
+`;
