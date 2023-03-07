@@ -1,7 +1,7 @@
-import cities500 from '../packages/cities-500';
-import cities1000 from '../packages/cities-1000';
-import cities5000 from '../packages/cities-5000';
-import cities15000 from '../packages/cities-15000';
+import cities500 from '../packages/cities-500-structured';
+import cities1000 from '../packages/cities-1000-structured';
+import cities5000 from '../packages/cities-5000-structured';
+import cities15000 from '../packages/cities-15000-structured';
 import schema from '../lib/schema';
 import type { FieldTypes } from '../lib/schema';
 import { DataGenerator } from '../lib/loadDataset';
