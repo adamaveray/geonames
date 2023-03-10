@@ -2,7 +2,7 @@
   "name": "cities-500-structured",
   "description": "A low-memory, structured loader for the GeoNames.org cities-500 dataset.",
   "author": "Adam Averay (https://adamaveray.com.au/)",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "homepage": "https://github.com/adamaveray/geonames",
   "repository": {
