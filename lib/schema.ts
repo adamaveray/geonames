@@ -11,7 +11,7 @@ export type Schema = typeof schema;
 const schema = {
   geonameId: { type: 'int', nullable: false },
   name: { type: 'string', nullable: false },
-  asciiName: { type: 'string', nullable: false },
+  asciiName: { type: 'string', nullable: true },
   alternateNames: { type: 'array', nullable: true },
   latitude: { type: 'float', nullable: false },
   longitude: { type: 'float', nullable: false },
@@ -19,7 +19,7 @@ const schema = {
   featureCode: { type: 'string', nullable: false },
   countryCode: { type: 'string', nullable: false },
   cc2: { type: 'string', nullable: true },
-  admin1Code: { type: 'string', nullable: false },
+  admin1Code: { type: 'string', nullable: true },
   admin2Code: { type: 'string', nullable: true },
   admin3Code: { type: 'string', nullable: true },
   admin4Code: { type: 'string', nullable: true },
