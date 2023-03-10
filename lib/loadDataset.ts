@@ -30,9 +30,9 @@ export default function* loadDataset(pathname: string): DataGenerator {
     return casters[type](value);
   };
 
-  for (const cols of iterateTsvLines(pathname, 'utf8')) {
+  for (const row of iterateTsvLines(pathname, 'utf8')) {
     yield Object.fromEntries(
-      Object.keys(schema).map((field, index) => [field, parseField(field as keyof Schema, cols[index] ?? '')]),
+      Object.keys(schema).map((field, index) => [field, parseField(field as keyof Schema, row[index] ?? '')]),
     ) as Row;
   }
 }
