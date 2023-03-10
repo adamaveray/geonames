@@ -37,7 +37,7 @@ describe('lib', () => {
       expect(() => {
         const generator = loadDataset(getLocalTsvPath('incorrectly-null.tsv'));
         generator.next();
-      }).toThrowError('Field "asciiName" cannot be empty');
+      }).toThrowError('Field "name" cannot be empty');
     });
 
     it.each([['cities500'], ['cities1000'], ['cities5000'], ['cities15000']])('loads datasets', (key) => {
