@@ -1,10 +1,11 @@
-import cities500 from '../packages/cities-500-structured';
+import { type DataGenerator } from '../lib/loadDataset';
+import schema, { type FieldTypes } from '../lib/schema';
+/* eslint-disable import/default,import/no-named-as-default-member,import/no-named-as-default,import/namespace -- Breaking on TypeScript declarations */
 import cities1000 from '../packages/cities-1000-structured';
-import cities5000 from '../packages/cities-5000-structured';
 import cities15000 from '../packages/cities-15000-structured';
-import schema from '../lib/schema';
-import type { FieldTypes } from '../lib/schema';
-import { DataGenerator } from '../lib/loadDataset';
+import cities500 from '../packages/cities-500-structured';
+import cities5000 from '../packages/cities-5000-structured';
+/* eslint-enable -- Breaking on TypeScript declarations */
 
 const getFieldsOfType = (assertedType: keyof FieldTypes): (keyof typeof schema)[] =>
   Object.entries(schema)
@@ -62,7 +63,7 @@ describe('packages', () => {
         expectType(field, record[field], record[field] instanceof Date);
       }
 
-      i++;
+      i += 1;
       if (i >= limit) {
         break;
       }

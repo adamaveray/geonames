@@ -6,8 +6,6 @@ export interface FieldTypes {
   date: Date;
 }
 
-export type Schema = typeof schema;
-
 const schema = {
   geonameId: { type: 'int', nullable: false },
   name: { type: 'string', nullable: false },
@@ -31,3 +29,5 @@ const schema = {
 } as const satisfies Record<string, { type: keyof FieldTypes; nullable: boolean }>;
 
 export default schema;
+
+export type Schema = typeof schema;

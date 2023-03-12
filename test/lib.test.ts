@@ -1,10 +1,16 @@
-import loadDataset from '../lib/loadDataset';
 import getImportPath from '../lib/getImportPath';
 import iterateTsvLines from '../lib/iterateTsvLines';
+import loadDataset from '../lib/loadDataset';
+
+function getLocalTsvPath(basename: string): string {
+  return `${__dirname}/__resources__/${basename}`;
+}
+
+function getDatasetPath(key: string): string {
+  return `${__dirname}/../sources/${key}.txt`;
+}
 
 describe('lib', () => {
-  const getLocalTsvPath = (basename: string) => `${__dirname}/__resources__/${basename}`;
-
   it('generates paths from imports', () => {
     const result = getImportPath('file:/path/to/script.js', 'resource.txt');
     expect(result).toEqual('/path/to/resource.txt');
@@ -41,7 +47,7 @@ describe('lib', () => {
     });
 
     it.each([['cities500'], ['cities1000'], ['cities5000'], ['cities15000']])('loads datasets', (key) => {
-      const generator = loadDataset(`${__dirname}/../sources/${key}.txt`);
+      const generator = loadDataset(getDatasetPath(key));
       const firstRecord = generator.next().value;
       expect(firstRecord).toMatchSnapshot(key);
     });

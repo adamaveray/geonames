@@ -1,3 +1,5 @@
+/* eslint sort-keys: "error" -- Organise rules */
+
 import { globals, makeEslintConfig } from '@averay/codeformat';
 
 export default [
@@ -8,12 +10,7 @@ export default [
   {
     files: ['lib/**/*'],
     languageOptions: {
-      globals: { ...globals.node, NodeJS: 'readonly', BufferEncoding: 'readonly' },
-    },
-    rules: {
-      '@typescript-eslint/no-unsafe-assignment': 'off',
-      '@typescript-eslint/no-unsafe-argument': 'off',
-      '@typescript-eslint/no-unnecessary-condition': ['error', { allowConstantLoopConditions: true }],
+      globals: { ...globals.node, BufferEncoding: 'readonly', NodeJS: 'readonly' },
     },
   },
   {
@@ -22,17 +19,13 @@ export default [
       globals: { ...globals.node, ...globals.jest, NodeJS: 'readonly' },
     },
     rules: {
-      '@typescript-eslint/no-unsafe-assignment': 'off',
-      '@typescript-eslint/no-unsafe-argument': 'off',
+      'unicorn/prefer-module': 'off',
     },
   },
   {
     files: ['packages/*/src/index.ts'],
     languageOptions: {
       globals: { ...globals.node, NodeJS: 'readonly' },
-    },
-    rules: {
-      '@typescript-eslint/no-unsafe-assignment': 'off',
     },
   },
 ];
