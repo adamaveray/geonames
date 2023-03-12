@@ -3,7 +3,7 @@ import globals from 'globals';
 
 export default [
   {
-    ignores: ['packages/*/dist/**/*'],
+    ignores: ['coverage/**/*', 'packages/*/dist/**/*'],
   },
   ...makeEslintConfig({ tsconfigPath: './tsconfig.json' }),
   {
