@@ -4,10 +4,13 @@
   "author": "Adam Averay (https://adamaveray.com.au/)",
   "version": "1.0.1",
   "license": "MIT",
-  "homepage": "https://github.com/adamaveray/geonames",
+  "homepage": "https://codeberg.org/adamaveray/geonames",
+  "bugs": {
+    "url": "https://codeberg.org/adamaveray/geonames/issues"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adamaveray/geonames.git",
+    "url": "git+https://codeberg.org/adamaveray/geonames.git",
     "directory": "packages/cities-5000-structured"
   },
   "type": "module",
