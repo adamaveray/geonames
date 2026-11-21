@@ -1,3 +1,7 @@
+**This repository has been migrated to Codeberg: [codeberg.org/adamaveray/geonames](https://codeberg.org/adamaveray/geonames)**
+
+---
+
 # GeoNames.org Cities Modules
 
 [![View code coverage on codecov][codecov-badge]][codecov]
